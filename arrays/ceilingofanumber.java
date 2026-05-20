@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-public class binarysearch {
+public class ceilingofanumber {
      public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);
@@ -21,12 +21,12 @@ public class binarysearch {
         System.out.println("Enter the number to be searched");
         int s = sc.nextInt();
 
-        int ans =binarysearch(arr, n, s);
+        int ans =ceilingofanumber(arr, n, s);
         System.out.println( "element found at index"+ans);
         
     }
 
-    static int binarysearch(int arr[], int n, int s) {
+    static int ceilingofanumber(int arr[], int n, int s) {
 
         int low = 0;
         int high = n - 1;
@@ -47,6 +47,6 @@ public class binarysearch {
             }
         }
 
-        return -1;
+        return low;
     }
 }
